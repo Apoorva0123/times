@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="options">
+            <div class="bar"></div>
+            <div class="thin"></div>
+            <div class="bar"></div>
+        </div>
+        <h1 style="color: red; margin-top: 5px;">TIME</h1>
+        <div><img width="20px" style="margin-top: 5px" src="https://th.bing.com/th/id/OIP.UIpyMulBhgJCzZ-xENMYEgHaHa?pid=ImgDet&rs=1"/> <input /></div>
+    </div>
+    <div class="body">
+        <div class="voices">
+            <h2>FEATURED VOICES</h2>
+            <div style="margin-top: 30px ;display: flex">
+                <div class="left">
+                    <div class="box">
+                        <h3>Anatol Lieven</h3>
+                        <p>Russia Has Been Warning the West About Ukraine for Decades</p>
+                    </div>
+                    <div class="box">
+                        <h3>Ismat Ara</h3>
+                        <p>How it Feels to Be a Muslim Woman Sold by India's Right Wing</p>
+                    </div>
+                    <div class="box">
+                        <h3>Robert J. Davis</h3>
+                        <p>Why You Shouldn't Exercise To Lose Weight</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <h3>Yohanca Delgado</h3>
+                        <p>The Life-Changing Practice That Will Help You Feel More Gratitude</p>
+                    </div>
+                    <div class="box">
+                        <h3>W. Kamau Bell</h3>
+                        <p>There's so Much More to Say About Bill Cosby</p>
+                    </div>
+                    <div class="box">
+                        <h3>Christina Bu</h3>
+                        <p>What Norway Can Teach the World About Switching to Electric Vehicles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="latest">
+            <h4>LATEST STORIES</h4>
+            <div id="late">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="module">
+    import {apiCall, appendNews} from "./main.js"
+    let res = await apiCall("http://localhost:8080/getTimeStories");
+    let parent = document.getElementById("late")
+    appendNews(res,parent);
+</script>

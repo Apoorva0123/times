@@ -1,0 +1,28 @@
+{
+    "getTimeStories" : [
+        {
+            "title" : "Here’s All the World Leaders Who Have Visited Ukraine",
+            "link" : "https://time.com/6188365/scholz-macron-draghi-visit-ukraine/"
+        },
+        {
+            "title" : "The Truth About Fasting and Type 2 Diabetes",
+            "link" : "https://time.com/6188405/type-2-diabetes-intermittent-fasting/"
+        },
+        {
+            "title" : "Trump's Social Platform Is Still Floundering Despite Boost from Jan. 6 Hearings",
+            "link" : "https://time.com/6186566/trump-truth-social-jan-6-hearings/"
+        },
+        {
+            "title" : "Will the Crypto Crash Beget a Better Crypto Future?",
+            "link" : "https://time.com/6188396/crypto-crash-future/"
+        },
+        {
+            "title" : "Homes Made from Straw or Fungi Can Now Get You a Cheaper Mortgage in the Netherlands",
+            "link" : "https://time.com/6188368/plant-based-construction-netherlands/"
+        },
+        {
+            "title" : "COVID-19 Deaths Rise After a 5-Week Decline",
+            "link" : "https://time.com/6188352/covid-deaths-rise-5-week-decline/"
+        }
+    ]
+}
